@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Main Content</title>
+    
+    <link rel="stylesheet" href="../css/search-sub-page.css">
+
+</head>
+
+<body>
+ 
+ 
+ 
+<!--1st header--> 
+<div class="header">
+<div class="sticky">
+<div class="nav-1">
+
+ 
+    <div class="logo">
+        <img src="B-img/b2.png"> 
+    </div>  
+
+    <div class="searchWrapper">
+
+        <form action=" "  class="searchbar">
+           <input type="text" placeholder="Serach any Book" id="searchInput" >      <!--   onkeyup="search()  onkeyup(use this for product search filteration )  -->
+           <button type="submit" class="search-obj"><ion-icon class="obj" name="search-outline"></ion-icon></button>
+           
+          </form>
+    </div>
+ 
+  <div class="head">    
+
+    <ul class="top">
+       <div class="div1"><li><a href="#" class="heart"><ion-icon name="heart"></ion-icon><br>Wishlist</a></li></div>
+       <div class="div1"><li><a href="#" class="person"><ion-icon name="person"></ion-icon><br>My Account</a></div>
+       <div class="div1"><li><a href="#" class="cart"><ion-icon name="cart" id="cart-icon"></ion-icon><br>Cart</a></li></div>
+
+
+<!-- add to cart html start -->
+<!--
+               <div class="ad-cart ">
+
+                     <div class="cart-title">Cart Items</div>
+
+                     <div class="cart-content">
+
+                         <div class="cart-box">
+
+                                  <div class="cart-image"><img src="../thisai-book/8 Rules of Love.jpg" alt="Book Image" id="cart-image"></div>
+                                  <div class="cart-detail">
+
+                                       <div class="book-name">Book</div> 
+                                       <div class="book-amt">
+
+                                            <div class="amt-1">Rs:00</div>
+                                            <div class="amt-2">Rs:00</div>
+
+                                       </div>
+                                       <div class="count"><input  type="number"  value="1"   class="cart-quantity"></div>
+
+                                  </div> 
+                                  <ion-icon name="trash"   class="cart-remove"  style="margin-left: 10px;" ></ion-icon>
+                         </div>
+
+                         <div class="cart-box">
+
+                          <div class="cart-image"><img src="../thisai-book/8 Rules of Love.jpg" alt="Book Image" id="cart-image"></div>
+                          <div class="cart-detail">
+
+                               <div class="book-name">Book</div> 
+                               <div class="book-amt">
+
+                                    <div class="amt-1">Rs:00</div>
+                                    <div class="amt-2">Rs:00</div>
+
+                               </div>
+                               <div class="count"><input  type="number"  value="1"   class="cart-quantity"></div>
+
+                          </div> 
+                         <ion-icon name="trash"   class="cart-remove"  style="margin-left: 10px;" ></ion-icon>
+
+                        </div>
+
+
+                     </div>
+
+
+                     <div class="total">
+                      <div class="total-title">Total</div>
+                     <div class="total-price">Rs:0</div>
+                    </div>
+                    <button class="btn-buy">Place Order</button>
+                     <ion-icon name="close-outline"   id="cart-close"></ion-icon>
+              
+                 </div>
+              
+
+
+               </div>          
+               
+--> 
+<!-- add to cart html ending -->   
+       
+      
+      <ul><li><a href="#"></a></li></ul>
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+<!--main page filtration & card content-->
+<nav>
+
+<!--filter section-->
+
+<div class="filter-a">
+
+   <h2 class="h-a">Filters</h2>
+     
+   <hr> 
+
+  <div class="nav1">
+
+          <h4 class="h">CATEGORIES</h4>
+
+    <ul class="top-1" >
+  
+      <li><a href="#" >Books </a>
+     <!--adding the extra book detail-->
+      <ul class="Books" >
+        <li><a href="#">Motivational Story</a></li>
+        <li><a href="#">Children Book</a></li>
+        <li><a href="#">Teen & Young Adult</a></li>
+        <li><a href="#">Comics</a></li>
+        <li><a href="#">Crime, Thriller & Mystery</a></li>
+        <li><a href="#">Action & Adventure</a></li>
+      </ul></li>
+        
+      <li><a href="#" >New Arrivals</a></li>
+      <li><a href="#" >Best Sellers</a></li>
+      <li><a href="#" >Today Deal</a></li>
+      <li><a href="#" >Request a Book</a></li>
+  
+    </ul>
+  
+  </div>
+
+  <hr>
+
+  <div class="nav2">
+        
+        <h4 class="h">PRICE</h4>
+
+        <ul class="top-2">
+            <li><label for=""></label><input type="range"></label></li> 
+            <li><label for=""></label>
+                
+                <select name="Min" id="min">
+                    <option value="Min">Min</option>
+                    <option value="100">&#8377;100</option>
+                    <option value="200">&#8377;200</option>
+                    <option value="300">&#8377;300</option>
+                    <option value="400">&#8377;400</option>
+                    <option value="500">&#8377;500</option>
+                    <option value="1000">&#8377;1000</option>
+                  </select>  to
+
+
+                  <select name="Max" id="max">
+                    <option value="Min">Max</option>
+                    <option value="100">&#8377;100</option>
+                    <option value="200">&#8377;200</option>
+                    <option value="300">&#8377;300</option>
+                    <option value="400">&#8377;400</option>
+                    <option value="500">&#8377;500</option>
+                    <option value="1000">&#8377;1000</option>
+                    <option value="1000">&#8377;1000 +</option>
+                  </select>
+                
+                
+                </label></li> 
+            
+           
+          </ul>
+    
+
+  </div>
+    <hr>
+
+  <div class="nav3">
+
+     <h4 class="h">OFFERS</h4>
+
+      <ul class="top-3">
+        <li><label for=""></label><input type="checkbox"> 5 <ion-icon name="star"></ion-icon> & above</label></li>
+        <li><label for=""></label><input type="checkbox"> 4 <ion-icon name="star"></ion-icon> & above</label></li> 
+        <li><label for=""></label><input type="checkbox"> 3 <ion-icon name="star"></ion-icon> & above</label></li> 
+        <li><label for=""></label><input type="checkbox"> 2 <ion-icon name="star"></ion-icon> & above</label></li> 
+        <li><label for=""></label><input type="checkbox"> 1 <ion-icon name="star"></ion-icon> & above</label></li> 
+         
+      </ul>
+
+  </div>
+
+
+ <hr>
+
+  <div class="nav4">
+
+      <h4 class="h">CUSTOMER RATINGS</h4>
+
+      <ul class="top-4">
+        <li><label for=""></label><input type="checkbox"> Buy More, Save More</label></li> 
+        <li><label for=""></label><input type="checkbox"> Special Price</label></li> 
+        
+       
+      </ul>
+
+  </div>
+
+  <hr>
+
+  <div class="nav5">
+
+    <h4 class="h">LANGUAGE</h4>
+
+     <ul class="top-5">
+        <li><label for=""></label><input type="checkbox"> Tamil</label></li> 
+        <li><label for=""></label><input type="checkbox"> English</label></li> 
+        <li><label for=""></label><input type="checkbox"> Hindi</label></li> 
+        
+       
+      </ul>
+
+  </div>
+
+ <hr>
+
+  <div class="nav6">
+
+    <h4 class="h">DISCOUNT</h4>
+
+     <ul class="top-5">
+        <li><label for=""></label><input type="checkbox"> 80% OR more</label></li> 
+        <li><label for=""></label><input type="checkbox"> 70% OR more</label></li> 
+        <li><label for=""></label><input type="checkbox"> 60% OR more</label></li> 
+        <li><label for=""></label><input type="checkbox"> 50% OR more</label></li> 
+        <li><label for=""></label><input type="checkbox"> 40% OR more</label></li> 
+        <li><label for=""></label><input type="checkbox"> 30% OR more</label></li> 
+        <li><label for=""></label><input type="checkbox"> 20% OR more</label></li> 
+        
+       
+      </ul>
+
+  </div>
+
+
+ <hr>
+
+  <div class="nav7">
+
+    <h4 class="h">AVAILABILITY</h4>
+
+    <ul class="top-7">
+        <li><label for=""></label><input type="checkbox"> Exclude Out of Stock</label></li> 
+        
+        
+       
+    </ul>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+<div class="filter-b-content">
+
+ <div class="filter-b">
+
+ 
+    <div class="nav8">
+
+      <a href="#">Sort By</a>
+        <ul class="sort">
+            <li> <input type="radio" name="sb" value="Price (lowest first)"> Price (lowest first)</li>
+            <li><input type="radio" name="sb" value="Relevance"> Relevance</li>
+            <li> <input type="radio" name="sb" value="What's New"> What's New</li>
+            <li> <input type="radio" name="sb" value="Price (highest first)"> Price (highest first)</li>
+            <li> <input type="radio" name="sb" value="Discount"> Discount
+
+        </li></ul>
+
+    </div>  
+
+
+    <div class="nav9">
+
+          <li><a href="#" >Books </a>
+        <!--adding the extra book detail-->
+         <ul class="Books" >
+           <li><a href="#">Motivational Story</a></li>
+           <li><a href="#">Children Book</a></li>
+           <li><a href="#">Teen & Young Adult</a></li>
+           <li><a href="#">Comics</a></li>
+           <li><a href="#">Crime, Thriller & Mystery</a></li>
+           <li><a href="#">Action & Adventure</a></li>
+      </ul></li>
+
+    </div>  
+
+
+ 
+    <div class="nav10">
+
+    
+      <li><a href="#" >Filters</a></li>
+       
+
+     </div>  
+ </div>
+
+
+
+
+
+
+
+
+ <!--book detail container-->
+  <div class="container">
+
+   <!--search box result -->
+
+       <div class="search-box" >
+           <h4>Showing result for </h4>
+        </div>
+
+   <!--content box-->
+
+    <div class="detail-box" id="detail-box">
+
+         <!--book box-->
+
+              <div class="book-box"  >
+
+                <div class="img"  data-item="8 Rules of Love book">
+                  
+                  <img src="thisai-book\8 Rules of Love.jpg" alt="" class="book-image">
+                <!--
+                    <div class="btn-1">
+                       <a href="#" class="btn">Buy Now</a>
+                    </div>
+
+                    -->
+                </div>
+
+            
+                <div class="product">
+
+                  <div class="product-name">
+                     <a href="#"><h2 class="book-title">8 Rules of Love : How to Find it, Keep it, and Let it Go...-	 Jay Shetty
+                     
+                      </h2></a>
+                     <span>New Arrival</span>
+                  </div>
+                 <div class="sub">
+                  <a href="#" class="price">&#8377;</a>
+                 </div>
+                </div>  
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+
+
+              
+         <!--book box-->
+
+         <div class="book-box">
+
+          <div class="img"  data-item="8 Rules of Love book">
+            
+            <img src="thisai-book/A Thousand Splendid Suns.jpg" alt="" class="book-image">
+         <!-- 
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+-->
+          </div>
+
+      
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#"><h2  class="book-title">A Thousand Splendid Suns-Khaled Hosseini</h2></a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+           </ion-icon>
+          </div>  
+        </div>
+        <ion-icon name="cart" class="add-cart">
+        </div>
+
+
+
+
+        
+         <!--book box-->
+
+         <div class="book-box" >
+
+          <div class="img" data-item=" book">
+            
+            <img src="thisai-book/As a Man Thinketh.jpg" alt="" class="book-image">
+        <!--  
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+-->
+          </div>
+
+      
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#"><h2  class="book-title">As a Man Thinketh</h2></a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+           
+          </div>  
+        </div>
+        <ion-icon name="cart" class="add-cart"></ion-icon>
+        </div>
+
+        
+         <!--book box-->
+
+         <div class="book-box">
+
+          <div class="img">
+            
+            <img src="thisai-book/Atomic Habits.jpg" alt="" class="book-image">
+         <!-- 
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+-->
+          </div>
+
+      
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#"><h2>Atomic Habits</h2></a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>  
+        </div>
+        </div>
+
+
+                
+         <!--book box-->
+
+        <div class="book-box">
+
+          <div class="img">
+            
+            <img src="thisai-book/Culture Code.jpg" alt="" class="book-image">
+        <!--  
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+-->
+          </div>
+
+      
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#"><h2>Culture Code</h2></a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>  
+        </div>
+        </div>
+
+
+                
+         <!--book box-->
+
+         <div class="book-box">
+
+          <div class="img">
+            
+            <img src="thisai-book/Do Epic Shit.jpg" alt="" class="book-image">
+       <!--   
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+-->
+          </div>
+
+      
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#"><h2>Do Epic Shit</h2></a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>  
+        </div>
+        </div>
+
+
+                
+         <!--book box-->
+
+         <div class="book-box">
+
+          <div class="img">
+            
+            <img src="thisai-book/Dopamine Detox.jpg" alt="" class="book-image">
+       <!--   
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+-->
+          </div>
+
+      
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#"><h2>Dopamine Detox</h2></a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>  
+        </div>
+        </div>
+
+
+                
+         <!--book box-->
+
+         <div class="book-box">
+
+          <div class="img">
+            
+            <img src="thisai-book/Getting Over You.jpg" alt="" class="book-image">
+         <!-- 
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+-->
+          </div>
+
+      
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#"><h2>Getting Over You</h2></a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+
+          </div>  
+        </div>
+        </div>
+
+                
+         <!--book box-->
+
+         <div class="book-box">
+
+          <div class="img">
+            
+            <img src="thisai-book/Here,There and Ever.jpg" alt="" class="book-image">
+         <!-- 
+            <div class="Button-1">
+              <a href="#" class="btn">Buy Now</a>
+            </div>
+          -->
+          </div>
+
+          
+          <div class="product">
+
+            <div class="product-name">
+               <a href="#">Here,There and Ever</a>
+               <span>New Arrival</span>
+            </div>
+            <div class="sub">
+            <a href="#" class="price">&#8377;</a>
+            <ion-icon name="cart" class="add-cart"></ion-icon>
+          </div>  
+        </div>
+        </div>
+     
+
+
+    </div>
+    
+  </div>
+
+
+</div>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<script src="../js/search-sub-page.js"></script>
+
+</body>
+</html>
+
+
